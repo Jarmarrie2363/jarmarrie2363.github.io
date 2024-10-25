@@ -38,15 +38,16 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-    createPlatform(720, 315, 200, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
-    createPlatform(260, 560, 100, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(720, 315, 80, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(260, 560, 80, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(350, 450, 80, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(540, 450, 80, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
-    createPlatform(220, 680, 150, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(220, 680, 80, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(900, 450, 80, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(1000, 650, 80, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
-    createPlatform(260, 560, 100, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
-    createPlatform(1110, 100, 100, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(260, 560, 80, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(1000, 120, 200, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(1000, 5, 200, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(1300, 200, 100, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(1300, 320, 100, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(1300, 440, 100, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
@@ -57,10 +58,10 @@ $(function () {
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-    createCollectable("steve", 1110, 50, 20, 0.5); // creates a "steve" collectible at the coordinates (500, 300), falling with a high gravity of 20, and bouncing with 50% bounce
-   createCollectable("grace", 500, 300); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
-   createCollectable("database", 900, 70, 20, 0.5); // creates a "steve" collectible at the coordinates (700, 200), falling with a high gravity of 20, and bouncing with 50% bounce
-   createCollectable("steve", 800, 50, 20, 0.5); // creates a "steve" collectible at the coordinates (500, 300), falling with a high gravity of 20, and bouncing with 50% bounce
+   createCollectable("steve", 1110, 50, 20, 0.5); // creates a "steve" collectible at the coordinates (500, 300), falling with a default gravity of 20, and bouncing with 50% bounce
+   createCollectable("grace", 500, 300); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce 50%
+   createCollectable("diamond", 900, 20, 20, 0.5); // creates a "steve" collectible at the coordinates (700, 200), falling with a default gravity of 20, and bouncing with % bounce
+   createCollectable("steve", 250, 5, 20, 0.5); // creates a "steve" collectible at the coordinates (500, 300), falling with a high gravity of 20, and bouncing with 50% bounce
    createCollectable("max", 1300, 300, 20, 0.5); // creates a "steve" collectible at the coordinates (500, 300), falling with a high gravity of 20, and bouncing with 50% bounce
    createCollectable("kennedi", 1300, 450, 20, 0.5); // creates a "steve" collectible at the coordinates (500, 300), falling with a high gravity of 20, and bouncing with 50% bounce
     
@@ -69,13 +70,12 @@ $(function () {
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-    createCannon("left", 200, 1000); // cannon on left wall, 600px down, shooting once per second 
-    createCannon("top", 300, 1000); // cannon on left wall, 600px down, shooting once per second\ 
-    createCannon("bottom", 600, 1000); // cannon on left wall, 600px down, shooting once per second 
-    createCannon("top", 900, 1000); // cannon on left wall, 600px down, shooting once  second 
-    createCannon("right", 680, 1000); // cannon on left wall, 600px down, shooting once per 4 second
     //////////ONLY CHANGE ABOVE THIS POINT///////////
     /////////////////////////////////////////////////
+    createCannon("left", 200, 1000); // cannon on left wall, 600px down, shooting once per second
+   createCannon("bottom", 600, 1000); // cannon on left wall, 600px down, shooting once per second
+   createCannon("top", 900, 1000); // cannon on left wall, 600px down, shooting once  second
+   createCannon("right", 580, 1000); // cannon on left wall, 600px down, shooting once per 4 second
   }
 
   registerSetup(setup);

@@ -12,7 +12,7 @@ body {
 /* navigation menu */
 nav {
     
-    background: rgb(252, 237, 233);
+    background: rgb(206, 206, 232);
    margin: 0 auto;
    margin: bottom 20px;
     display: flex;
@@ -39,7 +39,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(245, 238, 219);
+    background: rgb(195, 198, 214);
     display: flex;
 }
 .sidebar {
@@ -73,14 +73,14 @@ h2, h3 {
 }
 
 #portfolio li {
-    background: #fff;
+    background: #ffffff;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
 #portfolio li:hover {
-    background: #eee;
+    background: #d42525;
 }
 
 #portfolio a {
