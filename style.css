@@ -11,10 +11,9 @@ body {
 
 /* navigation menu */
 nav {
-    
+    margin-bottom: 20px;
     background: rgb(206, 206, 232);
-   margin: 0 auto;
-   margin: bottom 20px;
+   /* margin: 0 auto; */
     display: flex;
     padding: 10px;
 }
